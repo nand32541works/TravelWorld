@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWorld | Explore the World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo"><i class="fa-solid fa-earth-americas" style="color: #ffa500;"></i><span>T</span>ravelWorld</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="review.html">Review</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <a href="profile.html"><i class="fas fa-user" id="login-btn"></i></a>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <div class="profile-analysis-wrapper">
+        <section class="profile-section">
+            <div class="profile-container">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="person.png" alt="User Photo">
+                    </div>
+                    <h2>Nanda Kishore Jana</h2>
+                    <p>Travel Enthusiast | Explorer | Wanderer</p>
+                    <div class="profile-details">
+                        <p><i class="fas fa-envelope"></i> nandakishorejana780@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 81004 02401</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kolkata, India</p>
+                    </div>
+                    <div class="profile-buttons">
+                        <a href="#mybookings" class="btn">My Bookings</a>
+                        <a href="#" class="btn">Edit Profile</a>
+                        <a href="login.html" class="btn logout-btn">Logout</a>
+                    </div>
+                    <div id="mybookings" class="my-bookings">
+                        <h3>My Bookings</h3>
+                        <div class="booking-item">
+                            <h4>New Delhi</h4>
+                            <p><strong>Date:</strong> 26 January 2025</p>
+                            <p><strong>Status:</strong> Confirmed</p>
+                        </div>
+                        <div class="booking-item">
+                            <h4>European Escape</h4>
+                            <p><strong>Date:</strong> 03 March 2025</p>
+                            <p><strong>Status:</strong> Cancelled</p>
+                        </div>
+                        <div class="booking-item">
+                            <h4>Nepal Adventure</h4>
+                            <p><strong>Date:</strong> 24 May 2025</p>
+                            <p><strong>Status:</strong> Confirmed</p>
+                        </div>
+                        <div class="booking-item">
+                            <h4>Paris Getaway</h4>
+                            <p><strong>Date:</strong> 20 July 2025</p>
+                            <p><strong>Status:</strong> Confirmed</p>
+                        </div>
+                        <div class="booking-item">
+                            <h4>Maldives Travelling</h4>
+                            <p><strong>Date:</strong> 15 September 2025</p>
+                            <p><strong>Status:</strong> Confirmed</p>
+                        </div>
+                        <div class="booking-item">
+                            <h4>Goa Beach Escape</h4>
+                            <p><strong>Date:</strong> 03 October 2025</p>
+                            <p><strong>Status:</strong> Cancelled</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="data-analysis">
+            <div class="analysis-container">
+                <h2>Travel Data Analysis</h2>
+                <div class="analysis-summary">
+                    <div class="summary-card">
+                        <h3>12</h3>
+                        <p>Total Bookings</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>8</h3>
+                        <p>Completed Trips</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>4</h3>
+                        <p>Upcoming Trips</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>6</h3>
+                        <p>Cancelled</p>
+                    </div>
+                </div>
+                <div class="analysis-chart">
+                    <h3>Bookings Overview</h3>
+                    <canvas id="bookingChart"></canvas>
+                </div>
+                <div class="analysis-chart">
+                    <h3>Trip Type Preferences</h3>
+                    <canvas id="tripTypeChart"></canvas>
+                    <p style="font-size: 15px; line-height: 1.6; text-align: justify; margin-top: 10px;">
+                        The chart above represents the distribution of trip types booked by you over the last two years. 
+                        Adventure and City Tours have been your top choices, reflecting your keen interest in thrill and exploration. 
+                        Relaxation getaways like beach retreats and spa holidays have also been popular, while wildlife safaris 
+                        and cruises remain occasional indulgences. This insight can help us tailor exclusive package offers for your future journeys.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <a href="home.html" class="logo"><i class="fa-solid fa-earth-americas" style="color: #ffa500;"></i><span>T</span>ravelWorld</a>
+                <p>Your travel companion for unforgettable journeys around the globe. Discover. Explore. Experience.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="home.html">Home</a>
+                <a href="packages.html">Packages</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="review.html">Review</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kolkata, India</p>
+                <p><i class="fas fa-phone"></i> +91 81004 02401</p>
+                <p><i class="fas fa-envelope"></i> support@wanderworld.com</p>
+            </div>
+            <div class="footer-box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for travel offers and new destinations.</p>
+                <form action="#">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-credit">
+            <p>&copy; 2025 WanderWorld. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('bookingChart').getContext('2d');
+        const bookingChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+            labels: ['Completed', 'Upcoming', 'Cancelled'],
+            datasets: [{
+                label: 'Number of Trips',
+                data: [8, 4, 6],
+                backgroundColor: ['#ffa500', '#007bff', '#dc3545']
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            }
+            }
+        });
+        const tripCtx = document.getElementById('tripTypeChart').getContext('2d');
+        const tripTypeChart = new Chart(tripCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Adventure', 'Relaxation', 'City Tours', 'Wildlife', 'Cruise'],
+                datasets: [{
+                    label: 'Trips',
+                    data: [5, 3, 7, 2, 1],
+                    backgroundColor: [
+                        '#ffa500',
+                        '#007bff',
+                        '#28a745',
+                        '#dc3545',
+                        '#6f42c1'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
