@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --orange:#ffa500;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--orange);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span{
+    color: var(--orange);
+}
+
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+header .navbar a:hover{
+    color: var(--orange);
+}
+
+header .icons i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover{
+    color: var(--orange);
+}
+
+header .search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: 1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover{
+    color: var(--orange);
+}
+
+body {
+    background: linear-gradient(rgba(95, 95, 95, 0.7)), url('travel.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    padding-top: 8rem;
+    min-height: 100vh;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  width: 100%;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+}
+
+.form-container p {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#loginMessage {
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.box {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.box:focus {
+  border-color: #ffa500;
+  outline: none;
+  box-shadow: 0 0 5px rgba(6, 214, 241, 0.3);
+}
+
+.btn {
+  background: #ffa500;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px auto 0;  
+  width: 80%;
+  display: block;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #ffa500;
+}
+
+.account-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.account-link a {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.account-link a:hover {
+  text-decoration: underline;
+}
+
+#loginMessage {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  .form-container h2 {
+    font-size: 24px;
+  }
+}
+
+.footer {
+  background: #222;
+  color: #ddd;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box {
+  flex: 1 1 250px;
+}
+
+.footer-box h3 {
+  color: #ffa500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-box a {
+  display: block;
+  color: #ddd;
+  margin: 8px 0;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-box a:hover {
+  color: #ffa500;
+}
+
+.footer-box p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.footer-box form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-box input[type="email"] {
+  padding: 10px;
+  flex: 1;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.subscribe-btn {
+  background: #ffa500;
+  border: none;
+  padding: 11px 16px;
+  color: #222;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background: #fff;
+  color: #222;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #ddd;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #ffa500;
+  color: #222;
+  transform: translateY(-3px);
+}
+
+.footer-credit {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.footer-box .logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.footer-box .logo span {
+  color: #ffa500;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-box form {
+    flex-direction: column;
+  }
+
+  .footer-box input[type="email"] {
+    width: 100%;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+}
